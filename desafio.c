@@ -10,6 +10,8 @@ int main(){
     float area;
     float pib;
     int turistico;
+    float densidade;
+    float perCapita;
 
     printf("Bem vindo ao Super Trunfo. Cadastre suas cidades seguindo as seguintes regras: \n");
 
@@ -34,6 +36,8 @@ int main(){
     printf("Digite a quantidade de locais turísticos da cidade: \n");
     scanf(" %d", &turistico);
 
+    densidade = (float) populacao / area;
+    perCapita =  pib / (float) populacao;
 
     printf("\n\nCidade cadastrada com sucesso! \n\n");
 
@@ -44,6 +48,8 @@ int main(){
     printf("Área: %.2f km² \n", area);
     printf("PIB: %.2f bilhões de reais \n", pib);
     printf("Número de Pontos Turísticos: %d \n", turistico);
+    printf("Densidade Populacional: %.2f hab/km² \n", densidade);
+    printf("PIB per Capita: %.2f \n", perCapita);
 
     return 0;
 }
